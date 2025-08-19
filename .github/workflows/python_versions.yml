@@ -30,7 +30,7 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         python -m pip install .[dev]
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Test flake8
+    - name: Lint with flake8
       run: |
         flake 8
     - name: Test with pytest
